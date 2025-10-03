@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale="1.0">
+<title>Application Form</title>
+<style>
+body{
+font-family:Arial,sans-seriff;
+background-color:yellow;
+margin:20px;
+}
+h1{
+text-align:center;
+color:#333;
+font-size:32px;
+margin-bottom:20px;
+}
+table{
+width:60%;
+margin:0 auto;
+background-color:black;
+border-collapse:collapse;
+box-shadow:00 10px rgba(0,0,0,0.1);
+}
+td{
+padding:15px;
+font-size:18px;
+color:white;
+}
+th{
+text-align:left;
+padding:15px;
+background-color:orange;
+color:black;
+font-size:20px;
+}
+input[type="text"],input[type="email],input[type="password"],select{
+width:100%;
+padding:10px;
+font-size:16px;
+border:1px solid  #ccc;
+border-radius:4px;
+}
+input[type="submit"],input[type="reset"]{
+background-color:orange;
+color:black;
+padding:10px 20px;
+border:none;
+border-radius:4px;
+cursor:pointer;
+font-size:18px;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+background-color:#45a049;
+}
+.radio,.checkbox{
+width:auto;
+}
+</style>
+</head>
+<body>
+<fieldset>
+<legend align="center">Job Application Form</legend>
+<form action="#" method="post">
+<table>
+<tr>
+<th colspan="2">Your Information</th>
+</tr>
+<tr>
+<td>First Name:</td>
+<td><input type="text" name="firstname" placeholder="Enter your first name" required></td>
+</tr>
+<tr>
+<td>Last Name:</td>
+<td><input type="text" name="lastname" placeholder="Enter your last name" required></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td><input type="email" name="email" placeholder="Enter your email" required></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="password" placeholder="Enter your password" required></td>
+</tr>
+</tr>
+<tr>
+<td>Gender:</td>
+<td><input type="radio" name="gender" value="male" class="radio">Male
+<input type="radio" name="gender" value="female" class="radio">Female</td>
+</tr>
+<tr>
+<td>Enter your DOB:</td>
+<td><input type="date-time" name="dob" placeholder="Enter your date of birth" required></td>
+</tr>
+<tr>
+<td>Enter the OTP received</td>
+<td><input type="number" name="otp" placeholder="Enter 6-digit OTP" required></td>
+</tr>
+<td colspan="2" style="text-align:center">
+<input type="submit" value="Register">
+<input type="reset" value="Reset">
+</td>
+</fieldset>
+</table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
